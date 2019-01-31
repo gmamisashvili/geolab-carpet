@@ -1,23 +1,69 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* header */
+
+.header {
+  background-color: #3f3d3c;
+  color: #fff;
+  justify-content: space-between;
+  padding: 15px 10%;
+  align-items: center;
+  display: flex;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 1;
+}
+
+.header-logo {
+  width: 13%;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.nav-ul {
+  display: flex;
+}
+
+.nav-li {
+  margin-right: 5.8vw;
+}
+
+.nav-li:last-child {
+  margin-right: 0px;
+}
+
+/* header */
+
 .slider-imgs {
-    height: 500px;
-    object-fit: cover;
+  height: 500px;
+  object-fit: cover;
 }
 
 .slider-img-name {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 150px;
-    height: 50px;
-    right: 0px;
-    padding-left: 25px;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 150px;
+  height: 50px;
+  right: 0px;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-indicators li {
-    width: 15px;
-    border-radius: 50%;
-    height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
 }
