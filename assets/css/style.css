@@ -27,6 +27,15 @@
   margin-right: 5.8vw;
 }
 
+.nav-li-a:hover:after{
+    content: "";
+    display: inline-block;
+    height: 0.5em;
+    vertical-align: bottom;
+    width: 100%;
+    border-top: 1px solid #e3b559;
+}
+
 .nav-li:last-child {
   margin-right: 0px;
 }
