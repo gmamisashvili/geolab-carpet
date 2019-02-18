@@ -1,3 +1,7 @@
+/* scroll */
+
+/* scroll */
+
 /* header */
 
 .header {
@@ -25,15 +29,30 @@
 
 .nav-li {
   margin-right: 5.8vw;
+  position: relative;
 }
 
-.nav-li-a:hover:after{
-    content: "";
-    display: inline-block;
-    height: 0.5em;
-    vertical-align: bottom;
-    width: 100%;
-    border-top: 1px solid #e3b559;
+.nav-li-a:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -15px;
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  -webkit-transition: all 3s;
+  transition: all 0.5s;
+  border-top: 1px solid #3f3d3c;
+}
+
+.nav-li-a:hover:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  border-top: 1px solid #e3b559;
 }
 
 .nav-li:last-child {
@@ -109,6 +128,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.gallery-img {
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.06);
 }
 
 .gallery-name {
@@ -198,23 +225,38 @@
 }
 
 .gallery-more {
-  margin-top: 2%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.more-text {
-  cursor: pointer;
+.more-text:hover {
+  background-color: white;
+  border: 1px solid #e3b559;
+  color: #e3b559;
+  transition: all 0.5s;
 }
 
-.more-text:after{
-  content:"";
+.more-text {
+  cursor: pointer;
+  background-color: #e3b559;
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  position: relative;
+}
+
+.more-text:after {
+  content: "";
   display: inline-block;
+  position: absolute;
   height: 0.5em;
   vertical-align: bottom;
-  width: 100%;
+  width: 70%;
   border-top: 1px solid #e3b559;
+  left: 15px;
+  bottom: 0px;
 }
 
 /* gallery */
@@ -309,9 +351,17 @@
 .submit-btn {
   width: 100%;
   background-color: #e3b559;
-  color: black;
+  color: #fff;
   padding: 15px 0;
+  font-size: 18px;
   border: none;
+  transition: all 0.7s;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: #e3b559;
+  border: 1px solid #e3b559;
 }
 
 /* contact-form */
@@ -340,8 +390,6 @@
   align-items: center;
 }
 
-
-
 .contact-number {
   position: absolute;
   top: 50%;
@@ -361,39 +409,43 @@
 
 /* footer */
 
-
 /* carpet-inner-page */
 
-.inner-page-headers{
+.inner-page-headers {
   padding: 0 10%;
   margin-top: 10%;
 }
 
-.inner-carpet-header{
-  color: #E3B559;
+.inner-carpet-header {
+  color: #e3b559;
   font-size: 24px;
   padding-bottom: 10px;
 }
 
-  .carpets-container{
-    padding: 0 10%;
-  }
+.carpets-container {
+  padding: 0 10%;
+}
 
-.innter-img-tag{
+.innter-img-tag {
   width: 100%;
   object-fit: cover;
   height: 100%;
+  transition: all 0.5s;
 }
 
-.inner-carpet-divs{
+.innter-img-tag:hover {
+  transform: scale(0.9);
+}
+
+.inner-carpet-divs {
   height: 170px;
 }
 
-.inner-img-tag-price{
+.inner-img-tag-price {
   position: absolute;
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   background-color: #e3b559;
   border: 1px dashed black;
   font-size: 24px;
@@ -402,40 +454,40 @@
   z-index: 1;
   bottom: -20%;
   width: 30%;
-    height: 45px;
+  height: 45px;
 }
 
-.inner-img-old-price{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px dashed black;
-    font-size: 24px;
-    width: 30%;
-    height: 45px;
-    background-color: #fff;
-    bottom: 2%;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto;
+.inner-img-old-price {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed black;
+  font-size: 24px;
+  width: 30%;
+  height: 45px;
+  background-color: #fff;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.inner-page-main-rows{
+.inner-page-main-rows {
   margin-bottom: 10%;
 }
 
-.page-num{
-  margin:0 5px;
+.page-num {
+  margin: 0 5px;
   cursor: pointer;
 }
 
-.page-num:hover{
+.page-num:hover {
   color: #e3b559;
 }
 
-.arrow-left{
+.arrow-left {
   width: 0;
   height: 0;
   border-bottom: 5px solid transparent;
@@ -445,7 +497,7 @@
   line-height: 0;
 }
 
-.arrow-right{
+.arrow-right {
   width: 0;
   height: 0;
   border-bottom: 5px solid transparent;
