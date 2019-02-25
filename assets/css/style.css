@@ -90,8 +90,7 @@
 /* gallery */
 
 .gallery {
-  margin-top: 5%;
-  padding: 0 5%;
+  padding: 85px 5% 0 5%;
 }
 
 .gallery-row {
@@ -264,7 +263,7 @@
 /* about-us */
 
 .about-us-section {
-  margin-top: 5%;
+  padding-top: 85px;
 }
 
 .about-us-header-div {
@@ -285,11 +284,13 @@
 .about-us-img-1 {
   width: 100%;
   height: 250px;
+  object-fit: cover;
 }
 
 .about-us-img-2 {
   width: 100%;
   height: 425px;
+  object-fit: cover;
 }
 
 .about-us-row-2 {
@@ -301,7 +302,12 @@
   height: 175px;
 }
 
+.about-us-p-wrapper {
+  max-height: 100%;
+}
+
 .about-us-p {
+  max-height: 100%;
   padding: 40px 0 40px 5%;
   color: #fff;
 }
@@ -508,3 +514,45 @@
 }
 
 /* carpet-inner-page */
+
+/* media queries */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .gallery-name {
+    font-size: 34px;
+  }
+
+  .gallery-p {
+    font-size: 16px;
+  }
+
+  .gallery-price-tags {
+    padding: 12px;
+  }
+
+  .about-us-header {
+    font-size: 34px;
+  }
+
+  .about-us-p-wrapper {
+  }
+
+  .about-us-p {
+    font-size: 34px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+}
+
+/* media queries */
