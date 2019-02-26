@@ -59,6 +59,12 @@
   margin-right: 0px;
 }
 
+.burger-menu{
+  display: none;
+  width: 40px;
+  right: 5%;
+}
+
 /* header */
 
 /* slider */
@@ -607,6 +613,38 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+  .header-nav{
+    display: none;
+  }
+
+  .burger-menu{
+    display: block;
+    position: fixed;
+  }
+
+  .gallery{
+    padding-top: 0px;
+    margin-top: 80px;
+  }
+
+  .gallery-img-divs{
+    margin-bottom: 5%;
+  }
+
+  .gallery-header{
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .gallery-row{
+    height: auto;
+  }
+
+  .img-1-old-price{
+    top: -55px;
+  }
+
 }
 
 /* media queries */
