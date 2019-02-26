@@ -188,6 +188,7 @@
   font-size: 24px;
   z-index: 0;
   left: 40%;
+  transform: translateX(-25%);
   bottom: 2%;
 }
 
@@ -304,11 +305,12 @@
 
 .about-us-p-wrapper {
   max-height: 100%;
+  padding: 2% 0px 2% 5%;
 }
 
 .about-us-p {
-  max-height: 100%;
-  padding: 40px 0 40px 5%;
+  overflow: hidden;
+  height: 100%;
   color: #fff;
 }
 
@@ -391,9 +393,21 @@
 .contact-mail {
   position: absolute;
   top: 50%;
-  left: calc(50% - 160px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
+  font-size: 24px;
+}
+
+.fontawesome-icons {
+  font-size: 34px;
+}
+
+.social-links:nth-child(1),
+.social-links:nth-child(2) {
+  margin-right: 10px;
 }
 
 .contact-number {
@@ -517,16 +531,12 @@
 
 /* media queries */
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) {
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
 }
 
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
   .gallery-name {
     font-size: 34px;
   }
@@ -539,20 +549,64 @@
     padding: 12px;
   }
 
-  .about-us-header {
-    font-size: 34px;
+  .contact-items {
+    font-size: 24px;
   }
 
-  .about-us-p-wrapper {
+  .social-network-icons {
+    left: 7%;
   }
 
-  .about-us-p {
-    font-size: 34px;
+  .contact-number {
+    right: 7%;
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .slider-imgs {
+    height: 350px;
+  }
+
+  .gallery-row {
+    height: 450px;
+  }
+
+  .img-1-price {
+    top: -5%;
+  }
+
+  .img-1-old-price {
+    top: -16%;
+  }
+
+  .img-3-old-price {
+    left: -45%;
+  }
+
+  .more-text {
+    padding: 12px;
+  }
+
+  .about-us-header-div {
+    align-items: center;
+  }
+
+  .about-us-header {
+    font-size: 30px;
+  }
+
+  .about-us-p {
+    font-size: 14px;
+  }
+
+  .contact-items {
+    font-size: 18px;
+  }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
 }
 
 /* media queries */
