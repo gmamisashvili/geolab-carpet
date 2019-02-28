@@ -75,7 +75,7 @@ $(function() {
       }
     });
 
-  if (window.matchMedia("(max-width: 575.98px)").matches)  {
+  if (window.matchMedia("(max-width: 575.98px)").matches) {
     $(".about-us-header-div").prependTo(".about-us-section");
     $(".about-us-decoration").appendTo(".about-us-text-div");
   } else {
@@ -83,15 +83,21 @@ $(function() {
     $(".about-us-decoration").appendTo(".about-us-row");
   }
 
-  $(window).resize(function(){
+  $(window).resize(function() {
     var $theWindowSize = $(this).width();
-    if($theWindowSize < 575.98){
+    if ($theWindowSize < 575.98) {
       $(".about-us-header-div").prependTo(".about-us-section");
       $(".about-us-decoration").appendTo(".about-us-text-div");
-    }
-    else {
+    } else {
       $(".about-us-header-div").prependTo(".about-us-row");
       $(".about-us-decoration").appendTo(".about-us-row");
     }
-});
+  });
+
+  $(".burger-logo").on("click", function() {
+    $(".responsive-nav").show(300);
+  });
+  $(".nav-close-svg , .responsive-nav-li-a").on("click", function() {
+    $(".responsive-nav").hide(300);
+  });
 });

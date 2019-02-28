@@ -4,6 +4,34 @@
 
 /* header */
 
+.responsive-nav {
+  position: fixed;
+  z-index: 999;
+  height: 200px;
+  top: 0;
+  right: 0;
+  width: 50%;
+  color: white;
+  background: #e3b559;
+  display: none;
+}
+
+.nav-close-svg {
+  position: absolute;
+  top: 8%;
+  right: 10%;
+  width: 24px;
+}
+
+.responsive-nav-ul {
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.responsive-nav-li {
+  margin-bottom: 15px;
+}
+
 .header {
   background-color: #3f3d3c;
   color: #fff;
@@ -16,7 +44,7 @@
 }
 
 .header-logo {
-  width: 13%;
+  width: 124px;
 }
 
 .logo-img {
@@ -609,6 +637,10 @@
   .contact-items {
     font-size: 18px;
   }
+
+  .fontawesome-icons {
+    font-size: 28px;
+  }
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -636,7 +668,7 @@
     text-align: center;
   }
 
-  .gallery-p{
+  .gallery-p {
     font-size: 19px;
     margin-top: 20px;
   }
@@ -687,8 +719,8 @@
   .about-us-header-div {
     justify-content: center;
   }
-  
-  .about-us-p{
+
+  .about-us-p {
     font-size: 12px;
   }
 
@@ -704,19 +736,19 @@
     height: 100%;
   }
 
-  .about-us-decoration{
+  .about-us-decoration {
     margin-top: 5%;
   }
 
-  .about-us-2nd-img-div{
+  .about-us-2nd-img-div {
     height: 70%;
   }
 
-  .map-iframe{
+  .map-iframe {
     height: 315px;
   }
 
-  .social-network-icons{
+  .social-network-icons {
     top: 55%;
     width: fit-content;
     left: 0;
@@ -725,7 +757,7 @@
     margin-right: auto;
   }
 
-  .contact-number{
+  .contact-number {
     top: 70%;
     width: fit-content;
     left: 0;
@@ -736,7 +768,7 @@
     -webkit-transform: translateX(0);
   }
 
-  .contact-mail{
+  .contact-mail {
     top: 85%;
     width: fit-content;
     left: 0;
@@ -747,11 +779,11 @@
     -webkit-transform: translateX(0);
   }
 
-  .fontawesome-icons{
-    font-size: 30px;
+  .fontawesome-icons {
+    font-size: 24px;
   }
 
-  .contact-items{
+  .contact-items {
     font-size: 16px;
   }
 
@@ -771,8 +803,14 @@
     font-size: 12px;
   } /* Microsoft Edge */
 
-  .contact-header, .about-us-header, .gallery-name{
+  .contact-header,
+  .about-us-header,
+  .gallery-name {
     font-size: 28px;
+  }
+
+  .main-footer {
+    font-size: 12px;
   }
 }
 
