@@ -636,6 +636,11 @@
     text-align: center;
   }
 
+  .gallery-p{
+    font-size: 19px;
+    margin-top: 20px;
+  }
+
   .gallery-row {
     height: auto;
   }
@@ -682,6 +687,10 @@
   .about-us-header-div {
     justify-content: center;
   }
+  
+  .about-us-p{
+    font-size: 12px;
+  }
 
   .about-us-text-div {
     height: inherit;
@@ -693,6 +702,77 @@
 
   .about-us-img-2 {
     height: 100%;
+  }
+
+  .about-us-decoration{
+    margin-top: 5%;
+  }
+
+  .about-us-2nd-img-div{
+    height: 70%;
+  }
+
+  .map-iframe{
+    height: 315px;
+  }
+
+  .social-network-icons{
+    top: 55%;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-number{
+    top: 70%;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+
+  .contact-mail{
+    top: 85%;
+    width: fit-content;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+
+  .fontawesome-icons{
+    font-size: 30px;
+  }
+
+  .contact-items{
+    font-size: 16px;
+  }
+
+  .form-control::-webkit-input-placeholder {
+    font-size: 12px;
+  } /* WebKit, Blink, Edge */
+  .form-control:-moz-placeholder {
+    font-size: 12px;
+  } /* Mozilla Firefox 4 to 18 */
+  .form-control::-moz-placeholder {
+    font-size: 12px;
+  } /* Mozilla Firefox 19+ */
+  .form-control:-ms-input-placeholder {
+    font-size: 12px;
+  } /* Internet Explorer 10-11 */
+  .form-control::-ms-input-placeholder {
+    font-size: 12px;
+  } /* Microsoft Edge */
+
+  .contact-header, .about-us-header, .gallery-name{
+    font-size: 28px;
   }
 }
 
