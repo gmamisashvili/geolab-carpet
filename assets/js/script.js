@@ -74,4 +74,12 @@ $(function() {
         }
       }
     });
+
+  if (window.matchMedia("(max-width: 575.98px)").matches) {
+    $(".about-us-header-div").prependTo(".about-us-section");
+    $(".about-us-decoration").appendTo(".about-us-text-div");
+  } else {
+    $(".about-us-header-div").prependTo(".about-us-row");
+    $(".about-us-decoration").appendTo(".about-us-row");
+  }
 });
