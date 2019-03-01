@@ -58,7 +58,7 @@
 .nav-li {
   margin-right: 5.8vw;
   position: relative;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .nav-li-a:after {
@@ -530,7 +530,7 @@
 }
 
 .inner-page-main-rows {
-  margin-bottom: 10%;
+  margin-bottom: 100px;
 }
 
 .inner-carpets-size {
