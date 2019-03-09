@@ -29,11 +29,12 @@
   align-items: center;
   font-size: 24px;
   margin-top: 40%;
+  line-height: 3;
 }
 
-.responsive-nav-li {
-  margin-bottom: 10%;
-}
+/* .responsive-nav-li {
+  
+} */
 
 .header {
   background-color: #3f3d3c;
