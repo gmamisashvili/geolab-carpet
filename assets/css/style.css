@@ -1,6 +1,22 @@
-/* scroll */
+h2{
+  font-size: 37px;
+}
+/* modal */
+.modal{
+  display: none;
+}
 
-/* scroll */
+.imagepreview{
+  width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+
+.modal-footer{
+  justify-content: flex-start;
+}
+
+/* modal */
 
 /* header */
 
@@ -18,9 +34,9 @@
 
 .nav-close-svg {
   position: absolute;
-  top: 5%;
+  top: 20px;
   right: 6%;
-  width: 24px;
+  width: 30px;
 }
 
 .responsive-nav-ul {
@@ -184,7 +200,6 @@
 
 .gallery-name {
   color: #e3b559;
-  font-size: 44px;
 }
 
 .gallery-p {
@@ -591,9 +606,6 @@
   .nav-li {
     font-size: 18px;
   }
-  .gallery-name {
-    font-size: 34px;
-  }
 
   .gallery-p {
     font-size: 16px;
@@ -673,6 +685,12 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+
+  h2{
+    font-size: 28px;
+  }
+
   .header-nav {
     display: none;
   }
@@ -750,6 +768,7 @@
 
   .about-us-p {
     font-size: 12px;
+    max-height: 250px;
   }
 
   .about-us-text-div {
@@ -831,11 +850,7 @@
     font-size: 12px;
   } /* Microsoft Edge */
 
-  .contact-header,
-  .about-us-header,
-  .gallery-name {
-    font-size: 28px;
-  }
+  
 
   .main-footer {
     font-size: 12px;

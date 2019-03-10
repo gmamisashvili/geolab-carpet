@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
   let heightOfHeader = $(".header").outerHeight();
   $("body").css("paddingTop", heightOfHeader);
 
@@ -100,4 +100,17 @@ $(function() {
   $(".nav-close-svg , .responsive-nav-li-a").on("click", function() {
     $(".responsive-nav").hide(300);
   });
+  
+		$('.pop').on('click', function() {
+      $('.carpet-size').text('Size: ' + $(this).siblings('.inner-carpets-size').text());
+      $('.carpet-description').text('Description: ' + $(this).siblings('.inner-carpets-description').text());
+      $('.modal').show(500);
+      $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').show();   
+    });		
+    
+    $('.modal-close').on('click', function(){
+      $('#imagemodal').hide(500)
+    })
 });
+
