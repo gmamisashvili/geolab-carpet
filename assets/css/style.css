@@ -1,18 +1,18 @@
-h2{
+h2 {
   font-size: 37px;
 }
 /* modal */
-.modal{
+.modal {
   display: none;
 }
 
-.imagepreview{
+.imagepreview {
   width: 100%;
-    height: 400px;
-    object-fit: contain;
+  height: 400px;
+  object-fit: contain;
 }
 
-.modal-footer{
+.modal-footer {
   justify-content: flex-start;
 }
 
@@ -193,7 +193,8 @@ h2{
   transform: scale(1.1);
 }
 
-.gallery-img-parents {
+.gallery-img-parents,
+.inndercarpet-img-parents {
   height: 100%;
   overflow: hidden;
 }
@@ -685,9 +686,7 @@ h2{
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-
-
-  h2{
+  h2 {
     font-size: 28px;
   }
 
@@ -849,8 +848,6 @@ h2{
   .form-control::-ms-input-placeholder {
     font-size: 12px;
   } /* Microsoft Edge */
-
-  
 
   .main-footer {
     font-size: 12px;
