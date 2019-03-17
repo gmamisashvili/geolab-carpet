@@ -1,3 +1,7 @@
+body{
+  font-family: 'SegoeUI';
+}
+
 h2 {
   font-size: 37px;
 }
@@ -515,6 +519,7 @@ h2 {
 
 .inner-carpet-divs {
   height: 170px;
+  margin-bottom: 100px;
 }
 
 .inner-img-tag-price {
