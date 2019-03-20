@@ -100,17 +100,49 @@ $(document).ready(function() {
   $(".nav-close-svg , .responsive-nav-li-a").on("click", function() {
     $(".responsive-nav").hide(300);
   });
-  
-		$('.pop').on('click', function() {
-      $('.carpet-size').text('Size: ' + $(this).siblings('.inner-carpets-size').text());
-      $('.carpet-description').text('Description: ' + $(this).siblings('.inner-carpets-description').text());
-      $('.modal').show(500);
-      $('.imagepreview').attr('src', $(this).find('img').attr('src'));
-			$('#imagemodal').show();   
-    });		
-    
-    $('.modal-close').on('click', function(){
-      $('#imagemodal').hide(500)
-    })
-});
 
+  $(document).click(function(event) {
+    if ($("#imagemodal").css("display") == "block") {
+      if (
+        !$(event.target).closest(".modal-dialog , .pop").length &&
+        !$(event.target).is(".modal-dialog")
+      ) {
+        $("#imagemodal").slideUp(500);
+      }
+    }
+  });
+
+  $(".pop").on("click", function(e) {
+    e.preventDefault();
+    $(".carpet-size").text(
+      "Size: " +
+        $(this)
+          .siblings(".inner-carpets-size")
+          .text()
+    );
+    $(".carpet-description").text(
+      "Description: " +
+        $(this)
+          .siblings(".inner-carpets-description")
+          .text()
+    );
+    $(".pop-price").text(
+      "Price: " +
+        $(this)
+          .siblings(".inner-img-tag-price")
+          .text()
+    );
+    $(".modal").slideDown(500);
+    $(".imagepreview").attr(
+      "src",
+      $(this)
+        .find("img")
+        .attr("src")
+    );
+    $("#imagemodal").slideDown();
+  });
+
+  $(".modal-close").on("click", function() {
+    $("#imagemodal").hide(500);
+  });
+});
