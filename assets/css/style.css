@@ -779,6 +779,11 @@ h2 {
   .about-us-header-div {
     justify-content: center;
   }
+  
+  .about-us-p-wrapper{
+    max-height: 100%;
+    padding: 0 15px;
+  }
 
   .about-us-p {
     font-size: 12px;
@@ -787,6 +792,9 @@ h2 {
 
   .about-us-text-div {
     height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
   }
 
   .about-us-img-1 {
@@ -802,7 +810,7 @@ h2 {
   }
 
   .about-us-2nd-img-div {
-    height: 70%;
+    height: inherit;
   }
 
   .map-iframe {
